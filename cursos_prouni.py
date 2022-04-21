@@ -141,5 +141,5 @@ class ProuniSpider(Spider):
                              for nota in notas}
                     for key in ('nota_integral_ampla', 'nota_integral_cotas',
                                 'nota_parcial_ampla', 'nota_parcial_cotas'):
-                        data[key] = notas.get(key, None)
+                        data[key] = notas.get(key)
                     yield data
